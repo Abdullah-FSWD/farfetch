@@ -4,7 +4,7 @@ body{
 }
 #firstNavContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .show-flex {
   display: flex;
