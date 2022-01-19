@@ -1,0 +1,44 @@
+body{
+    width:90%;
+    margin: auto;
+}
+#firstNavContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.show-flex {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin-top: 20px;
+}
+#logo {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+#logo h1 {
+  text-align: center;
+}
+.show-flex i:not(:first-child) {
+  margin-left: 30px;
+}
+.show-flex i {
+  margin-bottom: 20px;
+}
+#secondNavContainer {
+  display: flex;
+  /* justify-content: space-between; */
+}
+#search {
+  flex: 1;
+  text-align: end;
+}
+input {
+  padding: 10px;
+  width: 50%;
+}
+button {
+  padding: 10px;
+}
+#choose {
+  flex: 1;
+}
