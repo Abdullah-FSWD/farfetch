@@ -12,17 +12,17 @@
     text-align: center;
     /* margin-top:-35%; */
 }
-.category-col h4 {
+.col h4 {
     font-size: 20px;
-    color: #000;
+    color: black;
     text-transform: capitalize;
     margin-bottom: 30px;
     font-weight: 500;
   }
-  .category-col ul li:not(:last-child) {
+  .col ul li:not(:last-child) {
     margin-bottom: 10px;
 }
-.category-col ul li a{
+.col ul li a{
     font-size :15px;
     text-transform: capitalize;
     color: #000;
@@ -35,6 +35,28 @@
     width:100px;
     margin:auto;
 }
+/* .card-title{
+    margi
+} */
 /* #less > button{
     padding:10px;
 } */
+.query{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-right: 30px;
+
+}
+#signup-container{
+    width: 40%;
+    margin: auto;
+    margin-top: 30px;
+}
+.btn-primary{
+background-color:black;
+color:white;
+width: 100%;
+border-radius:10px;
+}
+input{
+    border-radius: 10px;
+}

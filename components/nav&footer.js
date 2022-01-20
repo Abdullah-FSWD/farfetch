@@ -3,7 +3,7 @@ function footer(){
     <div class="container">
       <div class="row">
         <div class="footer-col">
-          <h4>FARFETCH APP</h4>
+          <h4 class="display-1">FARFETCH APP</h4>
           <ul>
             <li><a href="">Farfetch App for iOS and Android</a></li>
           </ul>
@@ -65,9 +65,9 @@ function footer(){
 function navbar(){
     return `<div id="firstNavContainer">
     <div class="show-flex">
-      <h4>women</h4>
-      <h4>men</h4>
-      <h4>kids</h4>
+      <h6>women</h6>
+      <h6>men</h6>
+      <h6>kids</h6>
     </div>
     <div id="logo">
       <h1>FARFETCH</h1>
@@ -82,7 +82,7 @@ function navbar(){
   </div>
   <div id="secondNavContainer">
     <div id="choose">
-      <h4>Please select a gender to shop</h4>
+      <h6>Please select a gender to shop</h6>
     </div>
 
     <div id="search">
