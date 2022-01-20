@@ -60,3 +60,7 @@ border-radius:10px;
 input{
     border-radius: 10px;
 }
+a{
+    color: #000000;
+    text-decoration: none;
+}

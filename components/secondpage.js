@@ -1,3 +1,43 @@
+function navbar(){
+    return `<div id="firstNavContainer">
+    <div class="show-flex">
+      <h6>women</h6>
+      <h6>men</h6>
+      <h6>kids</h6>
+    </div>
+    <div id="logo">
+     <a href="/"><h1>FARFETCH</h1></a>
+    </div>
+    <div class="show-flex">
+      <a href="signin.html"><i class="fas fa-user fa-2x"></i></a>
+      <i class="far fa-star fa-2x"></i>
+      <i class="fas fa-shopping-bag fa-2x"></i>
+      <!-- <input type="search" placeholder="Search fa-2x">
+          <button><i class="fas fa-search fa-1.4x"></i></button> -->
+    </div>
+  </div>
+  <div id="secondNavContainer">
+    <div class="show-flex">
+      <h6 id="off">20% Off</h6>
+      <h6 id="sale">Sale</h6>
+      <h6 id="new">New In</h6>
+      <h6 id="shop">Shop By</h6>
+      <h6 id="Designers">Designers</h6>
+      <h6 id="cloth">Clothing</h6>
+      <h6 id="show">Shows</h6>
+      <h6 id="sneaker">Sneakers</h6>
+      <h6 id="bag">Bags</h6>
+      <h6 id="accer">Accessories</h6>
+      <h6 id="watch">Watches</h6>
+    </div>
+
+    <div id="search">
+      <input type="search" placeholder="Search" />
+      <button><i class="fas fa-search fa-lg"></i></button>
+    </div>
+  </div>`
+}
+
 function footer(){
     return `<footer class="footer">
     <div class="container">
@@ -61,34 +101,4 @@ function footer(){
     </div>
   </footer>`
 }
-
-function navbar(){
-    return `<div id="firstNavContainer">
-    <div class="show-flex">
-      <a href="women.html"><h6>women</h6></a>
-      <a href="men.html"> <h6>men</h6></a>
-      <a href="men.html"><h6>kids</h6></a>
-    </div>
-    <div id="logo">
-      <a href="/"><h1>FARFETCH</h1></a>
-    </div>
-    <div class="show-flex">
-      <a href="signin.html"><i class="fas fa-user fa-2x"></i></a>
-      <i class="far fa-star fa-2x"></i>
-      <i class="fas fa-shopping-bag fa-2x"></i>
-      <!-- <input type="search" placeholder="Search fa-2x">
-          <button><i class="fas fa-search fa-1.4x"></i></button> -->
-    </div>
-  </div>
-  <div id="secondNavContainer">
-    <div id="choose">
-      <h6>Please select a gender to shop</h6>
-    </div>
-
-    <div id="search">
-      <input type="search" placeholder="Search" />
-      <button><i class="fas fa-search fa-lg"></i></button>
-    </div>
-  </div>`
-}
-export {navbar,footer};
+export {navbar , footer} 
