@@ -102,28 +102,28 @@ let data2=[
         season:"New Season",
         brand:"AMIRI",
         type:"down-feather logo-print jacket",
-        amount:"$3,042"
+        amount:"3,042"
     },
     {
         img:["https://cdn-images.farfetch-contents.com/17/62/03/36/17620336_36746291_600.jpg"],
         season:"New Season",
         brand:"AMIRI",
         type:"down-feather logo-print jacket",
-        amount:"$3,042"
+        amount:"3,042"
     },
     {
         img:["https://cdn-images.farfetch-contents.com/17/57/42/72/17574272_37020496_600.jpg"],
         season:"New Season",
         brand:"AMIRI",
         type:"down-feather logo-print jacket",
-        amount:"$3,042"
+        amount:"3,042"
     },
     {
         img:["https://cdn-images.farfetch-contents.com/17/59/22/19/17592219_36598213_600.jpg"],
         season:"New Season",
         brand:"AMIRI",
         type:"down-feather logo-print jacket",
-        amount:"$3,042"
+        amount:"3,042"
     },
 ]
 
@@ -146,7 +146,7 @@ function showData2(data2){
       type.innerText=el.type
 
       let amount=document.createElement("h4")
-      amount.innerText=el.amount
+      amount.innerText=` $ ${el.amount}`
 
       div.append(img,season,brand,type,amount)
 

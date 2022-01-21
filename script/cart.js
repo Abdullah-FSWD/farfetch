@@ -41,8 +41,9 @@
         
 
          remove.addEventListener("click", function(){
-
-           localStorage.removeItem("products")
+            cartItem.splice(el,1)
+            localStorage.setItem("products", JSON.stringify(cartItem))
+            window.location.reload();
          })
        
 

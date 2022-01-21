@@ -1,6 +1,6 @@
-body{
-    width:90%;
-    margin: auto;
+body {
+  width: 90%;
+  margin: auto;
 }
 #firstNavContainer {
   display: flex;
@@ -41,4 +41,10 @@ button {
 }
 #choose {
   flex: 1;
+}
+#sort {
+  width: 100px;
+  margin-left: 90%;
+  margin-top: 20px;
+  
 }

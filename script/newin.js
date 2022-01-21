@@ -92,7 +92,25 @@ let  cartItem=[]
      },
  ]
 
+ document.getElementById("select").addEventListener("change", function(){
+  let select=document.getElementById("select").value
+  console.log('select:', select)
+  if (select==="LtH"){
+   data= data.sort(function(a,b){
+      return a.amount-b.amount
+    })
+    showData(data)
+  }else{
+    data= data.sort(function(a,b){
+      return b.amount-a.amount
+    })
+    showData(data)
+  }
+ })
+
+
  function showData(data){
+   result.innerHTML=null;
    data.forEach((el)=>{
       let div=document.createElement("div")
 
@@ -109,7 +127,7 @@ let  cartItem=[]
        type.innerText=el.type
 
        let amount=document.createElement("h4")
-       amount.innerText=el.amount
+       amount.innerText=` $ ${el.amount}`
 
        let btn=document.createElement("button")
        btn.innerText="Add to Cart"
@@ -121,7 +139,9 @@ let  cartItem=[]
          localStorage.setItem("products", JSON.stringify(cartItem))
        })
 
-
+       div.addEventListener("click",function(){
+         window.location.href="cart.html"
+       })
        div.append(img,season,brand,type,amount,btn)
 
        result.append(div)
