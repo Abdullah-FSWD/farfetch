@@ -75,7 +75,7 @@ function navbar(){
     <div class="show-flex">
       <a href="signin.html"><i class="fas fa-user fa-2x"></i></a>
       <i class="far fa-star fa-2x"></i>
-      <i class="fas fa-shopping-bag fa-2x"></i>
+      <a href="cart.html"><i class="fas fa-shopping-bag fa-2x"></i></a>
       <!-- <input type="search" placeholder="Search fa-2x">
           <button><i class="fas fa-search fa-1.4x"></i></button> -->
     </div>

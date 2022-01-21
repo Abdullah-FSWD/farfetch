@@ -2,7 +2,7 @@ function navbar(){
     return `<div id="firstNavContainer">
     <div class="show-flex">
       <h6>women</h6>
-      <h6>men</h6>
+      <a href="men.html"><h6>men</h6></a>
       <h6>kids</h6>
     </div>
     <div id="logo">
@@ -11,7 +11,7 @@ function navbar(){
     <div class="show-flex">
       <a href="signin.html"><i class="fas fa-user fa-2x"></i></a>
       <i class="far fa-star fa-2x"></i>
-      <i class="fas fa-shopping-bag fa-2x"></i>
+      <a href="cart.html"><i class="fas fa-shopping-bag fa-2x"></i></a>
       <!-- <input type="search" placeholder="Search fa-2x">
           <button><i class="fas fa-search fa-1.4x"></i></button> -->
     </div>
@@ -20,7 +20,7 @@ function navbar(){
     <div class="show-flex">
       <h6 id="off">20% Off</h6>
       <h6 id="sale">Sale</h6>
-      <h6 id="new">New In</h6>
+      <a href="newin.html"><h6 id="new">New In</h6></a>
       <h6 id="shop">Shop By</h6>
       <h6 id="Designers">Designers</h6>
       <h6 id="cloth">Clothing</h6>
