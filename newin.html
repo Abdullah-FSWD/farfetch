@@ -36,7 +36,7 @@
 
   let result=document.getElementById("display-grid")
 
-
+  let cartItem=JSON.parse(localStorage.getItem("products")) || [];
 
   let data=[
       {
@@ -149,7 +149,8 @@
         btn.setAttribute("id","add")
 
         btn.addEventListener("click", function(){
-          local
+         
+          localStorage.setItem("products", JSON.stringify(el))
         })
 
 
