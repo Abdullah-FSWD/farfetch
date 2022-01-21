@@ -1,0 +1,17 @@
+.flex-layout{
+    display:flex;
+    justify-content:space-around;
+    gap:10px;
+    text-align:center;
+}
+.flex-layout div{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+img{
+    width:90%;
+    gap:10px;
+}
+#less{
+    width:150px;
+    margin:auto;
+}
