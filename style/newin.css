@@ -1,0 +1,14 @@
+#display-grid{
+    display:grid;
+    grid-template-columns:repeat(4,23%);
+    gap:4%;
+    margin-bottom :150px;
+}
+img{
+    width:90%;
+}
+#add{
+    width:100%;
+    border:0.5px solid black;
+    background:white;
+}

@@ -18,9 +18,11 @@
     
     <link rel="stylesheet" href="./style/nav.css" />
     <link rel="stylesheet" href="./style/footer.css" />
+    <link rel="stylesheet" href="./style/newin.css"
   </head>
   <body>
       <div id="navbar"></div>
+      <div id="display-grid"></div>
       <div id='footer'></div>
   </body>
 </html>
@@ -31,6 +33,9 @@
   let foot = document.getElementById("footer");
   nav.innerHTML = navbar();
   foot.innerHTML = footer();
+
+  let result=document.getElementById("display-grid")
+
 
 
   let data=[
@@ -63,116 +68,39 @@
           amount:"$3,042"
       },
       {
-        img:"https://cdn-images.farfetch-contents.com/17/87/17/01/17871701_37651634_480.jpg",
-        season:"",
-        brand:"",
-        type:"",
-        amount:"",
-      },
-      {
-        img:"https://cdn-images.farfetch-contents.com/17/83/99/00/17839900_37645989_480.jpg",
-        season:"",
-        brand:"",
-        type:"",
-        amount:"",
-      },
-      {
-        img:"https://cdn-images.farfetch-contents.com/17/87/32/35/17873235_37648038_480.jpg",
-        season:"",
-        brand:"",
-        type:"",
-        amount:"",
-      },
-      {
-        img:"https://cdn-images.farfetch-contents.com/17/85/10/11/17851011_37626058_480.jpg",
-        season:"",
-        brand:"",
-        type:"",
-        amount:"",
-      },
-      {
-        img:"https://cdn-images.farfetch-contents.com/17/70/95/32/17709532_37569642_480.jpg",
-        season:"",
-        brand:"",
-        type:"",
-        amount:"",
-      },
-      {
-        img:"https://cdn-images.farfetch-contents.com/17/32/94/98/17329498_37536901_480.jpg",
-        season:"",
-        brand:"",
-        type:"",
-        amount:"",
-      },
-      {
-        img:"https://cdn-images.farfetch-contents.com/17/87/51/35/17875135_37649860_480.jpg",
-        season:"",
-        brand:"",
-        type:"",
-        amount:"",
-      },
-      {
-        img:"https://cdn-images.farfetch-contents.com/17/85/07/49/17850749_37624988_480.jpg",
-        season:"",
-        brand:"",
-        type:"",
-        amount:"",
-      },
-      {
-        img:"https://cdn-images.farfetch-contents.com/17/85/10/13/17851013_37647172_480.jpg",
-        season:"",
-        brand:"",
-        type:"",
-        amount:"",
-      },
-      {
-        img:"https://cdn-images.farfetch-contents.com/17/62/40/57/17624057_36846351_480.jpg",
-        season:"",
-        brand:"",
-        type:"",
-        amount:"",
-      },
-      {
-        img:"https://cdn-images.farfetch-contents.com/17/84/11/33/17841133_37661702_480.jpg",
-        season:"",
-        brand:"",
-        type:"",
-        amount:"",
-      },
-      {
         img:"https://cdn-images.farfetch-contents.com/17/84/89/85/17848985_37625796_480.jpg",
-        season:"",
-        brand:"",
-        type:"",
-        amount:"",
+        season:"New Season",
+        brand:"Drill Bucket",
+        type:"Prada",
+        amount:"505",
       },
       {
         img:"https://cdn-images.farfetch-contents.com/17/53/07/58/17530758_37608955_480.jpg",
-        season:"",
-        brand:"",
-        type:"",
-        amount:"",
+        season:"New Season",
+        brand:"RIck Owens",
+        type:"round neck short sleeve",
+        amount:"680",
       },
       {
         img:"https://cdn-images.farfetch-contents.com/17/83/91/21/17839121_37638502_480.jpg",
-        season:"",
-        brand:"",
-        type:"",
-        amount:"",
+        season:"New Season",
+        brand:"Amiri",
+        type:"Skel Top High Snekears",
+        amount:"1252",
       },
       {
         img:"https://cdn-images.farfetch-contents.com/17/15/08/94/17150894_34838298_480.jpg",
-        season:"",
-        brand:"",
-        type:"",
-        amount:"",
+        season:"New season",
+        brand:"Isaek naeabt",
+        type:"new Season",
+        amount:"530",
       },
       {
         img:"https://cdn-images.farfetch-contents.com/17/44/37/17/17443717_36600061_480.jpg",
-        season:"",
-        brand:"",
-        type:"",
-        amount:"",
+        season:"New Season",
+        brand:"1AMI Paris",
+        type:"mid-rise straight-leg jeans",
+        amount:"325",
       },
       {
         img:"https://cdn-images.farfetch-contents.com/17/80/68/77/17806877_5cb476ab-321a-4d80-a573-ea103b7e97ee_480.jpg",
@@ -196,5 +124,40 @@
         amount:"1044",
       },
   ]
+
+  function showData(data){
+    data.forEach((el)=>{
+       let div=document.createElement("div")
+
+        let img=document.createElement("img")
+        img.src=el.img;
+
+       let  season=document.createElement("h6")
+        season.innerText=el.season
+
+        let brand = document.createElement("h4")
+        brand.innerText=el.brand
+
+        let type=document.createElement("h5")
+        type.innerText=el.type
+
+        let amount=document.createElement("h4")
+        amount.innerText=el.amount
+
+        let btn=document.createElement("button")
+        btn.innerText="Add to Cart"
+        btn.setAttribute("id","add")
+
+        btn.addEventListener("click", function(){
+          local
+        })
+
+
+        div.append(img,season,brand,type,amount,btn)
+
+        result.append(div)
+    })
+  }
+  showData(data)
 
 </script>
