@@ -138,10 +138,6 @@ let  cartItem=[]
         
          localStorage.setItem("products", JSON.stringify(cartItem))
        })
-
-       div.addEventListener("click",function(){
-         window.location.href="cart.html"
-       })
        div.append(img,season,brand,type,amount,btn)
 
        result.append(div)

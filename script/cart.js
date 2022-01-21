@@ -15,7 +15,7 @@
    console.log ("total:" , total)
 
      function showData(data){
-     data.forEach((el)=>{
+     data.forEach((el,index)=>{
         let div=document.createElement("div")
 
          let img=document.createElement("img")
@@ -41,7 +41,7 @@
         
 
          remove.addEventListener("click", function(){
-            cartItem.splice(el,1)
+            cartItem.splice(index,1)
             localStorage.setItem("products", JSON.stringify(cartItem))
             window.location.reload();
          })
