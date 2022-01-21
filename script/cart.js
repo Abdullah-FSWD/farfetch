@@ -31,7 +31,7 @@
          type.innerText=el.type
 
          let amount=document.createElement("h4")
-         amount.innerText=el.amount
+         amount.innerText=`$${el.amount}`
          total+=+el.amount
 
          let remove=document.createElement("button")
