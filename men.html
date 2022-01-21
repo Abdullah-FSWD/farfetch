@@ -83,9 +83,33 @@
           </div>
       </div>
 
-    <div id="display-flex">
+    <div id="display-flex" class="flex-layout">
         
     </div>
+
+    <div class="row">
+      <div class="col">
+        <h4 class="display-4 text-center mt-5">ONLY FOR FATFETCH : THE CASA COLLECTION</h4>
+          <a href=""><p class="lead text-center mt-5">Shop Dolce and Gabbana</p></a>
+
+        </div>
+        <div class="col my-3">
+          <img
+            src="https://cdn-images.farfetch-contents.com/17/69/17/70/17691770_36980061_480.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <h3 class="display-7 text-center">This week’s highlights</h3>
+      <div id="display-flex1" class="flex-layout"></div>
+
+      <h3 class="display-7 text-center mt-5">Trending now: most-wanted pieces</h3>
+      <div id="display-flex2" class="flex-layout"></div>
+      
+      <div id="less">
+        <button type="button" class="btn btn-outline-dark mt-5">Shop Now</button>
+      </div>
     </div>
     <div id="footer"></div>
   </body>
@@ -130,7 +154,7 @@
   ]
 
   let result =document.getElementById("display-flex")
- let showData=(data)=>{
+ function showData(data){
     data.forEach((el)=>{
        let div=document.createElement("div")
 
@@ -155,5 +179,105 @@
     })
   }
   showData(data)
+
+  let data1=[
+    {img:"https://cdn-static.farfetch-contents.com/cms-cm/in/media/3134012/data/7b9c9bf4e3b5aec20833f00044e233a5.jpg?ratio=3x4_three-columns&minWidth=409",
+      brand:"ISABEL MARANT",
+      type:"A Parisian take on daywear",
+    },
+    {img:"https://cdn-static.farfetch-contents.com/cms-cm/in/media/3134034/data/909dec9949132fa3cf8d56fee7119658.jpg?ratio=3x4_three-columns&minWidth=409",
+      brand:"NEW SNEAKER DROPS",
+      type:"Meet the future classics",
+    },
+    {img:"https://cdn-static.farfetch-contents.com/cms-cm/in/media/3134044/data/b8abb9fd849de4d05dec5467becff2a9.jpg?ratio=3x4_three-columns&minWidth=409",
+      brand:"BRUNELLO CUCINELLI",
+      type:"Modern tailoring to wear on repeat",
+    },
+  ]
+
+
+  let result1=document.getElementById("display-flex1")
+  function showData1(data1){
+    data1.forEach((el)=>{
+       let div=document.createElement("div")
+
+        let img=document.createElement("img")
+        img.src=el.img;
+
+       let  season=document.createElement("h6")
+        season.innerText=el.season
+
+        let brand = document.createElement("h4")
+        brand.innerText=el.brand
+
+        let type=document.createElement("h5")
+        type.innerText=el.type
+
+        div.append(img,season,brand,type)
+
+        result1.append(div)
+    })
+  }
+  showData1(data1)
+
+  let data2=[
+      {
+          img:"https://cdn-images.farfetch-contents.com/17/45/71/52/17457152_36637834_600.jpg",
+          season:"New Season",
+          brand:"AMIRI",
+          type:"down-feather logo-print jacket",
+          amount:"$3,042"
+      },
+      {
+          img:["https://cdn-images.farfetch-contents.com/17/62/03/36/17620336_36746291_600.jpg"],
+          season:"New Season",
+          brand:"AMIRI",
+          type:"down-feather logo-print jacket",
+          amount:"$3,042"
+      },
+      {
+          img:["https://cdn-images.farfetch-contents.com/17/57/42/72/17574272_37020496_600.jpg"],
+          season:"New Season",
+          brand:"AMIRI",
+          type:"down-feather logo-print jacket",
+          amount:"$3,042"
+      },
+      {
+          img:["https://cdn-images.farfetch-contents.com/17/59/22/19/17592219_36598213_600.jpg"],
+          season:"New Season",
+          brand:"AMIRI",
+          type:"down-feather logo-print jacket",
+          amount:"$3,042"
+      },
+  ]
+
+  
+  let result2 =document.getElementById("display-flex2")
+  function showData2(data2){
+    data2.forEach((el)=>{
+       let div=document.createElement("div")
+
+        let img=document.createElement("img")
+        img.src=el.img;
+
+       let  season=document.createElement("h6")
+        season.innerText=el.season
+
+        let brand = document.createElement("h4")
+        brand.innerText=el.brand
+
+        let type=document.createElement("h5")
+        type.innerText=el.type
+
+        let amount=document.createElement("h4")
+        amount.innerText=el.amount
+
+        div.append(img,season,brand,type,amount)
+
+        result2.append(div)
+    })
+  }
+  showData2(data2)
+
 </script>
 <!-- <script src="./components/men.js"></script> -->

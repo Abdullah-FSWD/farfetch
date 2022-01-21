@@ -95,7 +95,7 @@ let foot = document.getElementById("footer")
 nav.innerHTML =navbar();
 foot.innerHTML =footer()
 
-  document.querySelector("button").addEventListener("click", signUp);
+  document.querySelector("#create").addEventListener("click", signUp);
   var userArr = JSON.parse(localStorage.getItem("userData")) || [];
 
   function signUp() {
@@ -110,7 +110,7 @@ foot.innerHTML =footer()
       emailAddress: email,
       passWord: pass,
     };
-    // console.log(userCredentials)
+    console.log(userCredentials)
     userArr.push(userCredentials);
     localStorage.setItem("userData", JSON.stringify(userArr));
     window.location.href = "Signin.html";
